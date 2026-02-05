@@ -20,20 +20,20 @@ struct Rotation {
 	}
 }
 
-@Observable
+@Observable // -> vai ser atualizada qdo qualquer coisa mudar
 class MotionService: MotionProtocol {
 	var motionManager = CMMotionManager()
 	var rotation: Rotation
-	var pitch: Double = 0.0
-	var progress: Double = 0.5
+	var pitch: Double = 0.0 // -> x
+//	var progress: Double = 0.5 // -> y
 
-	private let pitchSensitivity: Double = 2.0
-	private let maxPitch: Double = 0.5  // Maximum pitch angle in radians (~28 degrees)
+	private let pitchSensitivity: Double = 2.0 // ajustes do range do movimento
+//	private let maxPitch: Double = 0.5  // Maximum pitch angle in radians (~28 degrees)
 
 	init() {
 		self.rotation = Rotation()
 		if !self.motionManager.isDeviceMotionAvailable {
-			print("Device Motion not available")
+			print("Device Motion not available") // colocar aviso ou pedir permissão se precisar
 		}
 	}
 
@@ -51,15 +51,15 @@ class MotionService: MotionProtocol {
 			self.rotation.y = attitude.pitch
 			self.rotation.z = attitude.yaw
 
-			// Calculate progress based on pitch
-			// Tilting right (positive pitch) increases progress
-			// Tilting left (negative pitch) decreases progress
-			let normalizedPitch = max(-maxPitch, min(maxPitch, attitude.pitch))
-			let pitchRatio = normalizedPitch / maxPitch  // -1.0 to 1.0
-
-			// Map pitch to progress: center (0 pitch) = 0.5, right = 1.0, left = 0.0
-			self.progress = 0.5 + (pitchRatio * 0.5)
-			self.progress = max(0.0, min(1.0, self.progress))  // Clamp between 0 and 1
+//			// Calculate progress based on pitch
+//			// Tilting right (positive pitch) increases progress
+//			// Tilting left (negative pitch) decreases progress
+//			let normalizedPitch = max(-maxPitch, min(maxPitch, attitude.pitch))
+//			let pitchRatio = normalizedPitch / maxPitch  // -1.0 to 1.0
+//
+//			// Map pitch to progress: center (0 pitch) = 0.5, right = 1.0, left = 0.0
+//			self.progress = 0.5 + (pitchRatio * 0.5)
+//			self.progress = max(0.0, min(1.0, self.progress))  // Clamp between 0 and 1
 		}
 	}
 
