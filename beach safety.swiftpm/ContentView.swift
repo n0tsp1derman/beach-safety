@@ -2,17 +2,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var giroscopio = MotionService()
-    init(giroscopio: MotionService = MotionService()) {
-        self.giroscopio = giroscopio
-        self.giroscopio.startListening()
-    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-//                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("\(giroscopio.rotation.x)")
+        HStack {
+            Spacer()
+            VStack{
+                Button {
+                    
+                } label: {
+                    Text("Play")
+                        .font(.title)
+                        .foregroundStyle(.white)
+                        .background(.green)
+                        .padding()
+                }
+
+            }
         }
     }
 }
+
