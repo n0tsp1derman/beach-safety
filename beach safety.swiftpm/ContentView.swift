@@ -7,18 +7,20 @@ struct ContentView: View {
         HStack {
             Spacer()
             VStack{
-                Button {
-                    
-                } label: {
+                NavigationLink(destination: AlagamarView(),
+                               
+                label: {
                     Text("Play")
-                        .font(.title)
-                        .foregroundStyle(.white)
-                        .background(.green)
-                        .padding()
-                }
-
+                        .font(.custom("WinkySans", size: 48))
+                    
+                })
+                .padding()
             }
         }
     }
+}
+
+#Preview(traits: .landscapeLeft) {
+    ContentView()
 }
 

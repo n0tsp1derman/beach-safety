@@ -1,0 +1,34 @@
+[
+    {
+        "id": 0,
+        "backgroundImages": [
+            "bg1"
+        ],
+        "character": "Jorge",
+        "speech": "Eu sou o Jorge",
+    },
+    {
+        "id": 1,
+        "backgroundImages": [
+            "bg1"
+        ],
+        "character": "Jorge",
+        "speech": "Eu sou o Jorge!",
+    },
+    {
+        "id": 2,
+        "backgroundImages": [
+            "Bg2"
+        ],
+        "character": "Jorge",
+        "speech": "Eu sou o Jorge!!",
+    },
+    {
+        "id": 3,
+        "backgroundImages": [
+            "Bg2"
+        ],
+        "character": "Joana",
+        "speech": "Eu sou a Joana",
+    }
+]
