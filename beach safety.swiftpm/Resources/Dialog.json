@@ -5,30 +5,222 @@
             "bg1"
         ],
         "character": "Jorge",
-        "speech": "Eu sou o Jorge",
+        "speech": "Duda, I think we need to go back... I don't see our umbrella anymore and mom said not to wander too far...",
     },
     {
         "id": 1,
         "backgroundImages": [
-            "bg1"
+            "bg2"
         ],
-        "character": "Jorge",
-        "speech": "Eu sou o Jorge!",
+        "character": "Duda",
+        "speech": "You worry too much, Jorge! We haven't even seen a sea monster yet! That treasure map we found said there might be something here in these rocks!",
     },
     {
         "id": 2,
         "backgroundImages": [
-            "Bg2"
+            "bg2"
         ],
         "character": "Jorge",
-        "speech": "Eu sou o Jorge!!",
+        "speech": "Sea monsters don't even exist! Besides, even if they WERE real, I don't think I want anything to do with them. I hate swimming.",
     },
     {
         "id": 3,
         "backgroundImages": [
-            "Bg2"
+            "bg1"
         ],
-        "character": "Joana",
-        "speech": "Eu sou a Joana",
-    }
+        "character": "Duda",
+        "speech": "Shush, I think I see something!",
+    },
+    {
+        "id": 4,
+        "backgroundImages": [
+            "binoculos"
+        ],
+        "character": "Duda",
+        "speech": "I knew it! There's something shiny in that rock, it looks like a big fish! Let's go take a closer look, Jorge!",
+    },
+    {
+        "id": 5,
+        "backgroundImages": [
+            "escalada"
+        ],
+        "character": "Duda",
+        "speech": "I knew it! There's something shiny in that rock, it looks like a big fish! Let's go take a closer look, Jorge!",
+    },
+    {
+        "id": 6,
+        "backgroundImages": [
+            "penhasco1"
+        ],
+        "character": "Duda",
+        "speech": "That's definitely a mermaid in that rock! I’ve always dreamed of meeting a mermaid... Hold my binoculars Julio, I’ll jump!",
+    },
+    {
+        "id": 7,
+        "backgroundImages": [
+            "penhasco2"
+        ],
+        "character": "Jorge",
+        "speech": "Jump?! Duda, WAIT-",
+    },
+    {
+        "id": 8,
+        "backgroundImages": [
+            "pulo1"
+        ],
+        "character": "???",
+        "speech": "Hey, girl, be careful, you shouldn't be swimming here!",
+    },
+    {
+        "id": 9,
+        "backgroundImages": [
+            "pulo2"
+        ],
+        "character": "Duda",
+        "speech": "Oh no! Why am I not moving? The current is too strong!",
+    },
+    {
+        "id": 10,
+        "backgroundImages": [
+            "pulo2"
+        ],
+        "character": "Jorge",
+        "speech": "Duda, I’ll go save you! Don't worry!",
+    },
+    {
+        "id": 11,
+        "backgroundImages": [
+            "miragrita"
+        ],
+        "character": "???",
+        "speech": "WAITTTT!!! Listen to me! I’m Mira, and I'm a life-guard mermaid. Duda, can you hear me? You need to trust me. ",
+    },
+    {
+        "id": 12,
+        "backgroundImages": [
+            "miragrita"
+        ],
+        "character": "Mira",
+        "speech": "Stop swimming and try to float! You're not strong enough to fight the current. We will save you, just don't panic",
+    },
+    {
+        "id": 13,
+        "backgroundImages": [
+            "dudaboia"
+        ],
+        "character": "Duda",
+        "speech": "Ok, now what?",
+    },
+    {
+        "id": 14,
+        "backgroundImages": [
+            "jorgeboia"
+        ],
+        "character": "Mira",
+        "speech": "Now you, young man! Don't go into the water to help her if you don't have the proper training. You can help her from the shore",
+    },
+    {
+        "id": 15,
+        "backgroundImages": [
+            "jorgeboia"
+        ],
+        "character": "Mira",
+        "speech": "Search for anything that floats and try to toss it to your friend!",
+    },
+    {
+        "id": 16,
+        "backgroundImages": [
+            "alagamar1"
+        ],
+        "character": "Mira",
+        "speech": "Great! Now it's easier for me to help! Duda, just don't grab at me so we’ll both sink, alright?",
+    },
+    {
+        "id": 17,
+        "backgroundImages": [
+            "alagamar1"
+        ],
+        "character": "Mira",
+        "speech": "We must go with the flow and try to leave from the sides, not swim in a straight line. Otherwise the strong current will just tire us and then we'll totally sink.",
+    },
+    {
+        "id": 18,
+        "backgroundImages": [
+            "ofegantes"
+        ],
+        "character": "Everyone",
+        "speech": "...",
+    },
+    {
+        "id": 19,
+        "backgroundImages": [
+            "ofegantes2"
+        ],
+        "character": "Duda",
+        "speech": "Oh my gosh, so you ARE a real mermaid? That's SO COOL! ",
+    },
+    {
+        "id": 20,
+        "backgroundImages": [
+            "ofegantes3"
+        ],
+        "character": "Jorge",
+        "speech": "Duda, don't go jumping into the sea like that! Didn't you see the red flag? Mom told me that means the waves are dangerous.",
+    },
+    {
+        "id": 21,
+        "backgroundImages": [
+            "ofegantes3"
+        ],
+        "character": "Mira",
+        "speech": "He's right. You can ask me all you want later, but first let me explain why you could have drowned if I didn't help.",
+    },
+    {
+        "id": 22,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "",
+    },
+    {
+        "id": 23,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "",
+    },
+    {
+        "id": 24,
+        "backgroundImages": [
+            "areia2"
+        ],
+        "character": "Mira",
+        "speech": "",
+    },
+    {
+        "id": 25,
+        "backgroundImages": [
+            "dudatriste"
+        ],
+        "character": "Duda",
+        "speech": "Sorry Mira, sorry Julio... I guess because I know how to swim, I just didn't think it would be that dangerous... I got too excited.",
+    },
+    {
+        "id": 26,
+        "backgroundImages": [
+            "miraejorge"
+        ],
+        "character": "Mira",
+        "speech": "Well, I think you learned your lesson. But if you want... ",
+    },
+    {
+        "id": 27,
+        "backgroundImages": [
+            "miraejorge"
+        ],
+        "character": "Mira",
+        "speech": "we can play a little more in the shallow, and then you can go back to your family too. Don't leave them worried!",
+    },
 ]

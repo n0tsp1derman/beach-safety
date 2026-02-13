@@ -16,11 +16,25 @@ struct AlagamarView: View {
     }
         
         var body: some View {
-            VStack {
-                Image(systemName: "globe")
-                //                .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("\(giroscopio.rotation.x)")
+            ZStack {
+                Color.blue
+                
+                Image("dudanaagua")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150)
+                    .offset(x: giroscopio.rotation.x * 100, y: giroscopio.rotation.y * 100)
+                    
+                
+            }
+            .ignoresSafeArea()
+            .onChange(of: giroscopio.rotation.x) {
+                print(giroscopio.rotation.x)
+                print(giroscopio.rotation.y)
             }
         }
     }
+
+#Preview (traits: .landscapeLeft){
+    AlagamarView(giroscopio: MotionService())
+}

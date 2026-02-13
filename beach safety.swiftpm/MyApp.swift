@@ -6,6 +6,12 @@ struct MyApp: App {
     
     init() {
         registerFont(filename: "WinkySans", fileExtension: "ttf")
+        
+//        for i in UIFont.familyNames.sorted() {
+//            for name in UIFont.fontNames(forFamilyName: i){
+//                print(name)
+//            }
+//        }
     }
     
     func registerFont(filename: String, fileExtension: String) {
@@ -21,8 +27,7 @@ struct MyApp: App {
     }
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            DialogTester()
+            ContentView()
         }
     }
 }

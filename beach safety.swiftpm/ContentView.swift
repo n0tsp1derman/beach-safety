@@ -2,19 +2,21 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject private var menuViewModel = MainMenuViewModel()
     
     var body: some View {
-        HStack {
-            Spacer()
-            VStack{
-                NavigationLink(destination: AlagamarView(),
-                               
-                label: {
-                    Text("Play")
-                        .font(.custom("WinkySans", size: 48))
-                    
-                })
-                .padding()
+        
+        Group {
+            switch menuViewModel.gameState {
+            case .mainMenu:
+                MainMenuView(mainMenuViewModel: menuViewModel)
+                
+            case .playing:
+                GameView()
+                
+            case .alagamar:
+                AlagamarView()
+                
             }
         }
     }
