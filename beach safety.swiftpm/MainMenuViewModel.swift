@@ -12,6 +12,6 @@ class MainMenuViewModel: ObservableObject {
     @Published var gameState: GameState = .mainMenu
     
     func startGame() {
-        gameState = .alagamar
+        gameState = .playing
     }
 }

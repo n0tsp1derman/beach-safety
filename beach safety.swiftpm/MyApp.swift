@@ -4,7 +4,10 @@ import CoreText
 @main
 struct MyApp: App {
     
+    
+    
     init() {
+        
         registerFont(filename: "WinkySans", fileExtension: "ttf")
         
 //        for i in UIFont.familyNames.sorted() {
@@ -28,6 +31,13 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                    scene.requestGeometryUpdate(.iOS(interfaceOrientations: .landscapeLeft))
+                }
+            }
         }
+        
     }
+       
 }

@@ -2,7 +2,7 @@
     {
         "id": 0,
         "backgroundImages": [
-            "bg1"
+            "intro1"
         ],
         "character": "Jorge",
         "speech": "Duda, I think we need to go back... I don't see our umbrella anymore and mom said not to wander too far...",
@@ -10,7 +10,7 @@
     {
         "id": 1,
         "backgroundImages": [
-            "bg2"
+            "intro2"
         ],
         "character": "Duda",
         "speech": "You worry too much, Jorge! We haven't even seen a sea monster yet! That treasure map we found said there might be something here in these rocks!",
@@ -18,7 +18,7 @@
     {
         "id": 2,
         "backgroundImages": [
-            "bg2"
+            "intro2"
         ],
         "character": "Jorge",
         "speech": "Sea monsters don't even exist! Besides, even if they WERE real, I don't think I want anything to do with them. I hate swimming.",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "backgroundImages": [
-            "bg1"
+            "intro1"
         ],
         "character": "Duda",
         "speech": "Shush, I think I see something!",
@@ -50,7 +50,7 @@
     {
         "id": 6,
         "backgroundImages": [
-            "penhasco1"
+            "pulo1"
         ],
         "character": "Duda",
         "speech": "That's definitely a mermaid in that rock! I’ve always dreamed of meeting a mermaid... Hold my binoculars Julio, I’ll jump!",
@@ -58,7 +58,7 @@
     {
         "id": 7,
         "backgroundImages": [
-            "penhasco2"
+            "pulo2"
         ],
         "character": "Jorge",
         "speech": "Jump?! Duda, WAIT-",
@@ -66,7 +66,7 @@
     {
         "id": 8,
         "backgroundImages": [
-            "pulo1"
+            "testeimg"
         ],
         "character": "???",
         "speech": "Hey, girl, be careful, you shouldn't be swimming here!",
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "backgroundImages": [
-            "pulo2"
+            "testeimg"
         ],
         "character": "Duda",
         "speech": "Oh no! Why am I not moving? The current is too strong!",
@@ -82,7 +82,7 @@
     {
         "id": 10,
         "backgroundImages": [
-            "pulo2"
+            "testeimg"
         ],
         "character": "Jorge",
         "speech": "Duda, I’ll go save you! Don't worry!",
@@ -146,7 +146,7 @@
     {
         "id": 18,
         "backgroundImages": [
-            "ofegantes"
+            "cansados1"
         ],
         "character": "Everyone",
         "speech": "...",
@@ -154,7 +154,7 @@
     {
         "id": 19,
         "backgroundImages": [
-            "ofegantes2"
+            "cansados2"
         ],
         "character": "Duda",
         "speech": "Oh my gosh, so you ARE a real mermaid? That's SO COOL! ",
@@ -162,7 +162,7 @@
     {
         "id": 20,
         "backgroundImages": [
-            "ofegantes3"
+            "cansados2"
         ],
         "character": "Jorge",
         "speech": "Duda, don't go jumping into the sea like that! Didn't you see the red flag? Mom told me that means the waves are dangerous.",
@@ -170,7 +170,7 @@
     {
         "id": 21,
         "backgroundImages": [
-            "ofegantes3"
+            "cansados2"
         ],
         "character": "Mira",
         "speech": "He's right. You can ask me all you want later, but first let me explain why you could have drowned if I didn't help.",
@@ -181,15 +181,15 @@
             "areia1"
         ],
         "character": "Mira",
-        "speech": "",
+        "speech": "The places with less waves hide danger, you see? Sometimes the waves try to return to the sea between underwater sand banks, which makes them stronger in points like these.",
     },
     {
         "id": 23,
         "backgroundImages": [
-            "areia1"
+            "areia2"
         ],
         "character": "Mira",
-        "speech": "",
+        "speech": "The current is so strong that can pull you out to the sea if you’re not careful, and even the best of swimmers will have a hard time swimming in the direction of the beach.",
     },
     {
         "id": 24,
@@ -197,20 +197,20 @@
             "areia2"
         ],
         "character": "Mira",
-        "speech": "",
+        "speech": "So when you are pulled by these return currents, you must not panic and instead try to float. Then, swim to the sides so you get over the sand banks and the waves get weaker. Do you understand now what we did when I helped you?",
     },
     {
         "id": 25,
         "backgroundImages": [
-            "dudatriste"
+            "dudahesita"
         ],
         "character": "Duda",
-        "speech": "Sorry Mira, sorry Julio... I guess because I know how to swim, I just didn't think it would be that dangerous... I got too excited.",
+        "speech": "Yeah... now I get it. Sorry Mira, sorry Julio... I guess because I know how to swim, I just didn't think it would be that dangerous... I got too excited.",
     },
     {
         "id": 26,
         "backgroundImages": [
-            "miraejorge"
+            "mirajorge"
         ],
         "character": "Mira",
         "speech": "Well, I think you learned your lesson. But if you want... ",
@@ -218,7 +218,7 @@
     {
         "id": 27,
         "backgroundImages": [
-            "miraejorge"
+            "mirajorge"
         ],
         "character": "Mira",
         "speech": "we can play a little more in the shallow, and then you can go back to your family too. Don't leave them worried!",

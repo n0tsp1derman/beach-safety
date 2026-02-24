@@ -23,7 +23,7 @@ struct DialogTester: View {
         .background {
             Image(dialogService.selectedImageName)
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
         }
     }
 }
