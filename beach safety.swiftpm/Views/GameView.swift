@@ -11,13 +11,13 @@ struct GameView: View {
     
     @State var dialogService = DialogService.shared
     @State private var showOptions = false
-
+    
     
     var body: some View {
         
         ZStack {
+            
             VStack {
-                
                 HStack {
                     Button {
                         showOptions = !showOptions
@@ -27,8 +27,6 @@ struct GameView: View {
                             .font(.system(size: 40))
                             .padding()
                     }
-                    
-                    
                     Spacer()
                 }
                 
@@ -45,7 +43,7 @@ struct GameView: View {
                                     .init(topLeading: 30, topTrailing: 30)
                                 )
                                 .fill(Color(.brownborder))
-                            )
+                                .stroke(Color(.brownborder), lineWidth: 5))
                         
                         Text(dialogService.selectedSpeech)
                             .font(.custom("WinkySans-Regular", size: 36))
@@ -54,11 +52,12 @@ struct GameView: View {
                             .frame(maxWidth: 952, maxHeight: 156)
                             .background(
                                 UnevenRoundedRectangle(cornerRadii:
-                                        .init(bottomLeading: 40, bottomTrailing: 40, topTrailing: 40))
+                                        .init(bottomLeading: 30, bottomTrailing: 30, topTrailing: 30))
                                 .fill(Color(.boxbg))
-                            )
+                                .stroke(Color(.brownborder), lineWidth: 5))
                     }
                     .padding()
+                    
                     
                     VStack{
                         Spacer()
@@ -79,23 +78,27 @@ struct GameView: View {
                         }
                     }
                     .padding()
-                }
-                .ignoresSafeArea()
-                .background {
-                    Image(dialogService.selectedImageName)
-                        .resizable()
-                        .scaledToFill()
+                    
                 }
             }
-            .ignoresSafeArea()
-            
             if showOptions {
                 OptionsView(onClose: {
                     showOptions = false
                 })
             }
         }
+        .ignoresSafeArea()
+        .background {
+            Image(dialogService.selectedImageName)
+                .resizable()
+                .scaledToFill()
+        }
+        
+        
+        
+        
     }
+   
 }
 
 #Preview(traits: .landscapeLeft) {

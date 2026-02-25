@@ -55,9 +55,10 @@ struct OptionsView: View {
                 Spacer()
             }
             .frame(width: 450, height: 500)
-            .background(Color(.amarelo))
-            .cornerRadius(20)
-        }
+            .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color(.amarelo))
+                .stroke(Color(.brownborder), lineWidth: 5))        }
     }
 }
 #Preview (traits: .landscapeLeft) {

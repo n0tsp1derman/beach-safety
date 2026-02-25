@@ -12,6 +12,7 @@ struct MainMenuView: View {
     @ObservedObject var mainMenuViewModel: MainMenuViewModel
     @ObservedObject var audioService = AudioService.shared
     @State private var showOptions = false
+    @State private var showCredits = false
     
     
     
@@ -19,15 +20,16 @@ struct MainMenuView: View {
         ZStack {
             HStack {
                 Spacer()
-                VStack (spacing: 5){
+                VStack (spacing: 0){
                     Spacer()
                     Button {
                         mainMenuViewModel.startGame()
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
+                                .fill(Color(.amarelo))
+                                .stroke(Color(.brownborder), lineWidth: 5)
                                 .frame(width: 341, height: 114)
-                                .foregroundStyle(Color(.amarelo))
                                 .padding()
                             
                             
@@ -43,8 +45,9 @@ struct MainMenuView: View {
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
+                                .fill(Color(.amarelo))
+                                .stroke(Color(.brownborder), lineWidth: 5)
                                 .frame(width: 341, height: 114)
-                                .foregroundStyle(Color(.amarelo))
                                 .padding()
                             
                             
@@ -56,12 +59,13 @@ struct MainMenuView: View {
                     }
                     
                     Button{
-                        
+                        showCredits = !showCredits
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
+                                .fill(Color(.amarelo))
+                                .stroke(Color(.brownborder), lineWidth: 5)
                                 .frame(width: 341, height: 114)
-                                .foregroundStyle(Color(.amarelo))
                                 .padding()
                             
                             
@@ -73,10 +77,17 @@ struct MainMenuView: View {
                     }
                 }
             }
+            .padding()
             
             if showOptions {
                 OptionsView(onClose: {
                     showOptions = false
+                })
+            }
+            
+            if showCredits {
+                CreditsView(onClose: {
+                    showCredits = false
                 })
             }
             
