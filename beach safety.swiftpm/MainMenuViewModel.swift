@@ -14,4 +14,8 @@ class MainMenuViewModel: ObservableObject {
     func startGame() {
         gameState = .playing
     }
+    
+    func alagamar() {
+        gameState = .alagamar
+    }
 }

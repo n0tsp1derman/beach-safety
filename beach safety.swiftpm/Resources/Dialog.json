@@ -5,18 +5,34 @@
             "intro1"
         ],
         "character": "Jorge",
-        "speech": "Duda, I think we need to go back... I don't see our umbrella anymore and mom said not to wander too far...",
+        "speech": "Duda, I think we need to go back... ",
     },
     {
         "id": 1,
         "backgroundImages": [
-            "intro2"
+            "intro1"
         ],
-        "character": "Duda",
-        "speech": "You worry too much, Jorge! We haven't even seen a sea monster yet! That treasure map we found said there might be something here in these rocks!",
+        "character": "Jorge",
+        "speech": "I don't see our umbrella anymore and mom said not to wander too far...",
     },
     {
         "id": 2,
+        "backgroundImages": [
+            "intro2"
+        ],
+        "character": "Duda",
+        "speech": "You worry too much, Jorge! We haven't even seen a sea monster yet! ",
+    },
+    {
+        "id": 3,
+        "backgroundImages": [
+            "intro2"
+        ],
+        "character": "Duda",
+        "speech": "That treasure map we found said there might be something here in these rocks!",
+    },
+    {
+        "id": 4,
         "backgroundImages": [
             "intro2"
         ],
@@ -24,7 +40,7 @@
         "speech": "Sea monsters don't even exist! Besides, even if they WERE real, I don't think I want anything to do with them. I hate swimming.",
     },
     {
-        "id": 3,
+        "id": 5,
         "backgroundImages": [
             "intro1"
         ],
@@ -32,7 +48,7 @@
         "speech": "Shush, I think I see something!",
     },
     {
-        "id": 4,
+        "id": 6,
         "backgroundImages": [
             "binoculos"
         ],
@@ -40,7 +56,7 @@
         "speech": "I knew it! There's something shiny in that rock, it looks like a big fish! Let's go take a closer look, Jorge!",
     },
     {
-        "id": 5,
+        "id": 7,
         "backgroundImages": [
             "escalada"
         ],
@@ -48,103 +64,199 @@
         "speech": "I knew it! There's something shiny in that rock, it looks like a big fish! Let's go take a closer look, Jorge!",
     },
     {
-        "id": 6,
+        "id": 8,
+        "backgroundImages": [
+            "escalada"
+        ],
+        "character": "Duda",
+        "speech": "Let's go take a closer look, Jorge!",
+    },
+    {
+        "id": 9,
+        "backgroundImages": [
+            "escalada"
+        ],
+        "character": "Duda",
+        "speech": "Imagine if it's a sea monster, like a big serpent? Or a Mermaid, maybe? I’ve always dreamed of meeting a mermaid... Hold my binoculars Julio, I’ll jump!",
+    },
+    {
+        "id": 10,
+        "backgroundImages": [
+            "escalada"
+        ],
+        "character": "Jorge",
+        "speech": "You always have your head in the clouds, Duda. Please be careful with those rocks.",
+    },
+    {
+        "id": 11,
         "backgroundImages": [
             "pulo1"
         ],
         "character": "Duda",
-        "speech": "That's definitely a mermaid in that rock! I’ve always dreamed of meeting a mermaid... Hold my binoculars Julio, I’ll jump!",
+        "speech": "WHAT? LOOK AT THAT! IT REALLY IS A MERMAID!",
     },
     {
-        "id": 7,
+        "id": 12,
+        "backgroundImages": [
+            "pulo1"
+        ],
+        "character": "Jorge",
+        "speech": "There's no way! Is this real? Do you --",
+    },
+    {
+        "id": 13,
+        "backgroundImages": [
+            "pulo2"
+        ],
+        "character": "Duda",
+        "speech": "I NEED to talk to her! Hold my binoculars!",
+    },
+    {
+        "id": 14,
         "backgroundImages": [
             "pulo2"
         ],
         "character": "Jorge",
-        "speech": "Jump?! Duda, WAIT-",
+        "speech": "What?! Duda, WAIT-",
     },
     {
-        "id": 8,
+        "id": 15,
         "backgroundImages": [
-            "testeimg"
+            "choque"
         ],
         "character": "???",
         "speech": "Hey, girl, be careful, you shouldn't be swimming here!",
     },
     {
-        "id": 9,
+        "id": 16,
         "backgroundImages": [
-            "testeimg"
+            "choque"
         ],
-        "character": "Duda",
-        "speech": "Oh no! Why am I not moving? The current is too strong!",
+        "character": "Jorge",
+        "speech": "Are you out of your mind? The water's too deep!",
     },
     {
-        "id": 10,
+        "id": 17,
         "backgroundImages": [
-            "testeimg"
+            "choque"
+        ],
+        "character": "Duda",
+        "speech": "I know how to swim, don't worry!",
+    },
+    {
+        "id": 18,
+        "backgroundImages": [
+            "choque"
+        ],
+        "character": "Duda",
+        "speech": "Wait. Why can't I move? The current is too strong! Someone help!",
+    },
+    {
+        "id": 19,
+        "backgroundImages": [
+            "choque"
         ],
         "character": "Jorge",
         "speech": "Duda, I’ll go save you! Don't worry!",
     },
     {
-        "id": 11,
+        "id": 20,
         "backgroundImages": [
             "miragrita"
         ],
         "character": "???",
-        "speech": "WAITTTT!!! Listen to me! I’m Mira, and I'm a life-guard mermaid. Duda, can you hear me? You need to trust me. ",
+        "speech": "WAITTTT!!! Listen to me! I’m Mira, and I'm a life-guard mermaid.",
     },
     {
-        "id": 12,
+        "id": 21,
+        "backgroundImages": [
+            "miragrita"
+        ],
+        "character": "???",
+        "speech": "Duda, can you hear me? You need to trust me.",
+    },
+    {
+        "id": 22,
         "backgroundImages": [
             "miragrita"
         ],
         "character": "Mira",
-        "speech": "Stop swimming and try to float! You're not strong enough to fight the current. We will save you, just don't panic",
+        "speech": "Stop swimming and try to float! You're not strong enough to fight the current.",
     },
     {
-        "id": 13,
+        "id": 23,
         "backgroundImages": [
-            "dudaboia"
+            "miragrita"
+        ],
+        "character": "Mira",
+        "speech": "We will save you, just don't panic, okay?",
+    },
+    {
+        "id": 24,
+        "backgroundImages": [
+            "choque"
         ],
         "character": "Duda",
-        "speech": "Ok, now what?",
+        "speech": "Ok, ok, I think I got it. Now what?",
     },
     {
-        "id": 14,
+        "id": 25,
         "backgroundImages": [
-            "jorgeboia"
+            "boia"
         ],
         "character": "Mira",
-        "speech": "Now you, young man! Don't go into the water to help her if you don't have the proper training. You can help her from the shore",
+        "speech": "Now you, young man! Don't go into the water to help her.",
     },
     {
-        "id": 15,
+        "id": 26,
         "backgroundImages": [
-            "jorgeboia"
+            "boia"
         ],
         "character": "Mira",
-        "speech": "Search for anything that floats and try to toss it to your friend!",
+        "speech": "Leave this to me, I'm trained! You can help her from the shore",
     },
     {
-        "id": 16,
+        "id": 27,
         "backgroundImages": [
-            "alagamar1"
+            "boia"
         ],
         "character": "Mira",
-        "speech": "Great! Now it's easier for me to help! Duda, just don't grab at me so we’ll both sink, alright?",
+        "speech": "Toss that pool float you have to her.",
     },
     {
-        "id": 17,
+        "id": 28,
         "backgroundImages": [
-            "alagamar1"
+            "frame6"
         ],
         "character": "Mira",
-        "speech": "We must go with the flow and try to leave from the sides, not swim in a straight line. Otherwise the strong current will just tire us and then we'll totally sink.",
+        "speech": "Great! Now it's easier for me to help!",
     },
     {
-        "id": 18,
+        "id": 29,
+        "backgroundImages": [
+            "frame7"
+        ],
+        "character": "Mira",
+        "speech": "Duda, just don't grab at me or we’ll both sink, alright?",
+    },
+    {
+        "id": 30,
+        "backgroundImages": [
+            "frame8"
+        ],
+        "character": "Mira",
+        "speech": "We must go with the flow and try to leave from the sides, not swim in a straight line.",
+    },
+    {
+        "id": 31,
+        "backgroundImages": [
+            "frame8"
+        ],
+        "character": "Mira",
+        "speech": "Otherwise the strong current will just tire us and then we'll totally sink.",
+    },
+    {
+        "id": 32,
         "backgroundImages": [
             "cansados1"
         ],
@@ -152,7 +264,7 @@
         "speech": "...",
     },
     {
-        "id": 19,
+        "id": 33,
         "backgroundImages": [
             "cansados2"
         ],
@@ -160,23 +272,39 @@
         "speech": "Oh my gosh, so you ARE a real mermaid? That's SO COOL! ",
     },
     {
-        "id": 20,
+        "id": 34,
         "backgroundImages": [
             "cansados2"
         ],
         "character": "Jorge",
-        "speech": "Duda, don't go jumping into the sea like that! Didn't you see the red flag? Mom told me that means the waves are dangerous.",
+        "speech": "Duda, don't go jumping into the sea like that!",
     },
     {
-        "id": 21,
+        "id": 35,
+        "backgroundImages": [
+            "cansados2"
+        ],
+        "character": "Jorge",
+        "speech": "Didn't you see the red flag? Mom told me that means the waves are dangerous.",
+    },
+    {
+        "id": 36,
         "backgroundImages": [
             "cansados2"
         ],
         "character": "Mira",
-        "speech": "He's right. You can ask me all you want later, but first let me explain why you could have drowned if I didn't help.",
+        "speech": "He's right. You can ask me all your questions later, ",
     },
     {
-        "id": 22,
+        "id": 37,
+        "backgroundImages": [
+            "cansados2"
+        ],
+        "character": "Mira",
+        "speech": "but first let me explain why you could have drowned if I didn't help.",
+    },
+    {
+        "id": 38,
         "backgroundImages": [
             "areia1"
         ],
@@ -184,31 +312,79 @@
         "speech": "The places with less waves hide danger, you see? Sometimes the waves try to return to the sea between underwater sand banks, which makes them stronger in points like these.",
     },
     {
-        "id": 23,
+        "id": 39,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "Sometimes the waves try to return to the sea between underwater sand banks,",
+    },
+    {
+        "id": 40,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "which makes them stronger in points like these.",
+    },
+    {
+        "id": 41,
         "backgroundImages": [
             "areia2"
         ],
         "character": "Mira",
-        "speech": "The current is so strong that can pull you out to the sea if you’re not careful, and even the best of swimmers will have a hard time swimming in the direction of the beach.",
+        "speech": "The current is so strong that can pull you out to the sea if you’re not careful,",
     },
     {
-        "id": 24,
+        "id": 42,
         "backgroundImages": [
             "areia2"
         ],
         "character": "Mira",
-        "speech": "So when you are pulled by these return currents, you must not panic and instead try to float. Then, swim to the sides so you get over the sand banks and the waves get weaker. Do you understand now what we did when I helped you?",
+        "speech": "and even the best of swimmers will have a hard time swimming in the direction of the beach.",
     },
     {
-        "id": 25,
+        "id": 43,
+        "backgroundImages": [
+            "areia2"
+        ],
+        "character": "Mira",
+        "speech": "So when you are pulled by these return currents, you must not panic,",
+    },
+    {
+        "id": 44,
+        "backgroundImages": [
+            "areia2"
+        ],
+        "character": "Mira",
+        "speech": "and instead try to float. Then, swim to the sides so you get over the sand banks and the waves get weaker. Do you understand now what we did when I helped you?",
+    },
+    {
+        "id": 45,
+        "backgroundImages": [
+            "areia2"
+        ],
+        "character": "Mira",
+        "speech": "Do you understand now what we did when I helped you?",
+    },
+    {
+        "id": 46,
         "backgroundImages": [
             "dudahesita"
         ],
         "character": "Duda",
-        "speech": "Yeah... now I get it. Sorry Mira, sorry Julio... I guess because I know how to swim, I just didn't think it would be that dangerous... I got too excited.",
+        "speech": "Yeah... now I get it. Sorry Mira, sorry Julio...",
     },
     {
-        "id": 26,
+        "id": 47,
+        "backgroundImages": [
+            "dudahesita"
+        ],
+        "character": "Duda",
+        "speech": "I guess because I know how to swim, I just didn't think it would be that dangerous... I got too excited.",
+    },
+    {
+        "id": 48,
         "backgroundImages": [
             "mirajorge"
         ],
@@ -216,11 +392,19 @@
         "speech": "Well, I think you learned your lesson. But if you want... ",
     },
     {
-        "id": 27,
+        "id": 49,
         "backgroundImages": [
             "mirajorge"
         ],
         "character": "Mira",
-        "speech": "we can play a little more in the shallow, and then you can go back to your family too. Don't leave them worried!",
+        "speech": "we can play a little more in the shallow, and then you can go back to your family too.",
+    },
+    {
+        "id": 50,
+        "backgroundImages": [
+            "mirajorge"
+        ],
+        "character": "Jorge",
+        "speech": "Don't leave them worried!",
     },
 ]

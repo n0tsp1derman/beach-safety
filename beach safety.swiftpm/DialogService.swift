@@ -29,7 +29,6 @@ class DialogService {
     private(set) var selectedSpeechId = 0
     private(set) var selectedImageId = 0
     private(set) var selectedDialog = CharacterSpeech()
-    
     var selectedImageName: String {
         return selectedDialog.backgroundImages[selectedImageId]
     }
@@ -72,6 +71,8 @@ class DialogService {
         if selectedImageId == selectedDialog.backgroundImages.count - 1 {
             self.selectedSpeechId += 1
             selectedDialog = getSpeech()
+        } else if selectedSpeechId == 18 {
+            
         } else {
             self.selectedImageId += 1
         }

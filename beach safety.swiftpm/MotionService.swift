@@ -23,7 +23,7 @@ struct Rotation {
 @Observable // -> vai ser atualizada qdo qualquer coisa mudar
 class MotionService: MotionProtocol {
 	var motionManager = CMMotionManager()
-	var rotation: Rotation
+    var rotation: Rotation 
 	var pitch: Double = 0.0 // -> x
 //	var progress: Double = 0.5 // -> y
 
@@ -47,9 +47,9 @@ class MotionService: MotionProtocol {
 			self.pitch = attitude.pitch
 
 			// Update rotation for backward compatibility
-			self.rotation.x = attitude.roll
-			self.rotation.y = attitude.pitch
-			self.rotation.z = attitude.yaw
+			self.rotation.x = attitude.roll * 250
+			self.rotation.y = attitude.pitch * 250
+			self.rotation.z = attitude.yaw * 250 /// a sensibilidade pra moviemntar o ipad
 
 //			// Calculate progress based on pitch
 //			// Tilting right (positive pitch) increases progress

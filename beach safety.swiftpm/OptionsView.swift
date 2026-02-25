@@ -18,26 +18,44 @@ struct OptionsView: View {
                 .ignoresSafeArea()
             
             VStack {
+                HStack (alignment: .top){
+                    Button {
+                        if let onClose = onClose {
+                            onClose()
+                        }
+                    } label: {
+                       Image(systemName: "xmark")
+                            .foregroundStyle(Color(.brownborder))
+                            .font(.largeTitle)
+                            .bold()
+                    }
+                    .padding()
+                    
+                    Spacer()
+                }
+                Text("Options")
+                    .font(.custom("WinkySans-Regular_Bold", size: 48))
+                    .foregroundStyle(Color(.brownborder))
+                
+                 Spacer()
+                    .frame(height: 60)
+                
                 Text("Background volume")
+                    .font(.custom("WinkySans-Regular", size: 24))
                 
                 Slider(value: $audioService.bgmVolume, in: 0.0...1.0)
-                    .padding()
+                    .padding(.horizontal, 50)
                 
                 Text("Sound effects volume")
+                    .font(.custom("WinkySans-Regular", size: 24))
                 
                 Slider(value: $audioService.sfxVolume, in: 0.0...1.0)
-                    .padding()
+                    .padding(.horizontal, 50)
                 
-                Button {
-                    if let onClose = onClose {
-                        onClose()
-                    }
-                } label: {
-                    Text("close")
-                }
+                Spacer()
             }
-            .frame(width: 350, height: 550)
-            .background(Color.white)
+            .frame(width: 450, height: 500)
+            .background(Color(.amarelo))
             .cornerRadius(20)
         }
     }

@@ -15,7 +15,7 @@ struct ContentView: View {
                 GameView()
                 
             case .alagamar:
-                AlagamarView()
+                DrowningView()
                 
             }
         }

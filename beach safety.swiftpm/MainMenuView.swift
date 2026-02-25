@@ -14,6 +14,7 @@ struct MainMenuView: View {
     @State private var showOptions = false
     
     
+    
     var body: some View {
         ZStack {
             HStack {
@@ -26,7 +27,7 @@ struct MainMenuView: View {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 341, height: 114)
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(Color(.amarelo))
                                 .padding()
                             
                             
@@ -43,7 +44,7 @@ struct MainMenuView: View {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 341, height: 114)
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(Color(.amarelo))
                                 .padding()
                             
                             
@@ -60,7 +61,7 @@ struct MainMenuView: View {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 341, height: 114)
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(Color(.amarelo))
                                 .padding()
                             
                             
