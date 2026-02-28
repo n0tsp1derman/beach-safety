@@ -57,15 +57,17 @@ struct CreditsView: View {
                         Text("""
 All sound effects are free for personal use, credited below.
 
-**Waves:** 
-**Button:**
-**Surprise:**
-**Splash:**
-**Completion:**
+**Ocean Waves:** DRAGON-STUDIO on Pixabay
+**Minimalist Button Hover Sound Effect:** Lesiakower on Pixabay
+**DR Dubby Move Snare 4:** by deadrobotmusic on Freesound
+**SPLASH (by blaukreuz):** freesound_community on Pixabay
+**Success:** by UpdatePelgo on Pixabay
 """)
                             .font(.custom("WinkySans-Regular", size: 24))
                         
                     }
+                    Spacer()
+                        .frame(height: 50)
                 }
                 .padding(.horizontal, 30)
                 Spacer()

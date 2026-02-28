@@ -23,6 +23,13 @@ struct ContentView: View {
                 
             case .eyeglass:
                 EyeglassView(mainMenuViewModel: menuViewModel)
+                
+            case .ending:
+                EndingView(mainMenuViewModel: menuViewModel)
+                
+            case .returnMenu:
+                MainMenuView(mainMenuViewModel: menuViewModel)
+
             }
                 
         }

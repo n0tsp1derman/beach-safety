@@ -74,6 +74,8 @@ struct GameView: View {
                                 mainMenuViewModel.gameState = .eyeglass
                             } else if ((currentDialog + 1) == 30) {
                                 mainMenuViewModel.gameState = .alagamar
+                            } else if ((currentDialog + 1) == 50){
+                                mainMenuViewModel.gameState = .ending
                             } else {
                                 
                             }

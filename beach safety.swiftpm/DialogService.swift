@@ -25,7 +25,7 @@ struct CharacterSpeech: Codable {
 @Observable
 @MainActor
 class DialogService {
-    private(set) var selectedSpeechId = 0
+    private(set) var selectedSpeechId = 47
     private(set) var selectedImageId = 0
     private(set) var selectedDialog = CharacterSpeech()
     var selectedImageName: String {

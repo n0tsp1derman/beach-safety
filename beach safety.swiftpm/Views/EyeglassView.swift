@@ -16,6 +16,8 @@ struct EyeglassView: View {
     
     @State var collision: Bool = false
     @State var canMove: Bool = true
+    @State var showSkip = false
+    @State var showInstructions = true
 
     
     var body: some View {
@@ -62,6 +64,41 @@ struct EyeglassView: View {
                                 self.checkCollision()
                             }
                         }))
+            
+            VStack {
+                Spacer()
+                HStack (alignment: .bottom){
+                    Spacer()
+                    if showSkip {
+                        Button {
+                            mainMenuViewModel.gameState = .playing
+                        } label: {
+                            Text("Skip")
+                                .font(.custom("WinkySans-Regular", size: 30))
+                                .bold()
+                                .padding()
+                                .foregroundStyle(Color(.brownborder))
+                                .background(Color(.amarelo))
+                                .cornerRadius(10)
+                            
+                        }
+                    }
+                }
+                
+            }
+            .padding(50)
+            
+            if showInstructions {
+                EyeglassInstructionsView(onClose: {
+                    showInstructions = false
+                })
+            }
+        }
+        .onAppear {
+            Task {
+                try? await Task.sleep(for: .seconds(20))
+                showSkip = true
+            }
         }
     }
     func checkCollision() {

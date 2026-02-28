@@ -414,5 +414,21 @@
         ],
         "character": "Mira",
         "speech": "Don't leave them worried!",
+    },
+    {
+        "id": 51,
+        "backgroundImages": [
+            "fim1", "fim2", "fim3", "fim4"
+        ],
+        "character": "Mira",
+        "speech": "Don't leave them worried!",
+    },
+    {
+        "id": 51,
+        "backgroundImages": [
+            "fim1"
+        ],
+        "character": "",
+        "speech": "",
     }
 ]

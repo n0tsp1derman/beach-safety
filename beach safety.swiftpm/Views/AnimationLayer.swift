@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AnimationLayer: View {
     @State var dialogService = DialogService.shared
+    @ObservedObject var audioService = AudioService.shared
 
     @State var xPos = UIScreen.main.bounds.width/2
     @State var yPos = UIScreen.main.bounds.height/2
@@ -16,6 +17,17 @@ struct AnimationLayer: View {
 
     var body: some View {
         switch dialogService.selectedSpeechId {
+        
+        case 14:
+            Image("pulo1")
+                .resizable()
+                .scaledToFit()
+                .onAppear {
+                    Task {
+                        try? await Task.sleep(for: .seconds(3))
+                        audioService.playSfx(named: "splash")
+                    }
+                }
             
         case 20:
             Image("miragrita_anim")

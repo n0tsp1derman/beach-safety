@@ -13,4 +13,6 @@ enum GameState {
     case playing
     case alagamar
     case eyeglass
+    case ending
+    case returnMenu
 }
