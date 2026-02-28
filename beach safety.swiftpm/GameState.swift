@@ -8,7 +8,9 @@
 import Foundation
 
 enum GameState {
+    case rotation
     case mainMenu
     case playing
     case alagamar
+    case eyeglass
 }

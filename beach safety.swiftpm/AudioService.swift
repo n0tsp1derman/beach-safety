@@ -22,11 +22,14 @@ class AudioService: NSObject, ObservableObject {
     
     @Published var sfxVolume: Float {
         didSet {
+            sfxPlayer?.volume = sfxVolume
             UserDefaults.standard.set(sfxVolume, forKey: "sfxVolume")
         }
     }
     
     private var bgmPlayer: AVAudioPlayer?
+    private var sfxPlayer: AVAudioPlayer?
+
     
     override init() {
         self.bgmVolume = UserDefaults.standard.object(forKey: "bgmVolume") as? Float ?? 0.5
@@ -45,6 +48,21 @@ class AudioService: NSObject, ObservableObject {
             bgmPlayer?.numberOfLoops = -1
             bgmPlayer?.volume = self.sfxVolume
             bgmPlayer?.play()
+        } catch {
+            print("Failed to play sound: \(error)")
+        }
+    }
+    
+    func playSfx (named name: String, withExtension ext: String = "mp3") {
+        guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
+            print("Sound file not found")
+            return
+        }
+        do {
+            sfxPlayer = try AVAudioPlayer(contentsOf: url)
+            sfxPlayer?.numberOfLoops = 0
+            sfxPlayer?.volume = self.sfxVolume
+            sfxPlayer?.play()
         } catch {
             print("Failed to play sound: \(error)")
         }

@@ -37,7 +37,7 @@
             "intro2"
         ],
         "character": "Jorge",
-        "speech": "Sea monsters don't even exist! Besides, even if they WERE real, I don't think I want anything to do with them. I hate swimming.",
+        "speech": "Sea monsters don't even exist! And that treasure map might be fake.",
     },
     {
         "id": 5,
@@ -53,15 +53,15 @@
             "binoculos"
         ],
         "character": "Duda",
-        "speech": "I knew it! There's something shiny in that rock, it looks like a big fish! Let's go take a closer look, Jorge!",
+        "speech": "I knew it! There's something shiny in that rock, it looks like a big fish!",
     },
     {
         "id": 7,
         "backgroundImages": [
-            "escalada"
+            "binoculos"
         ],
         "character": "Duda",
-        "speech": "I knew it! There's something shiny in that rock, it looks like a big fish! Let's go take a closer look, Jorge!",
+        "speech": "Let's go take a closer look, Jorge!",
     },
     {
         "id": 8,
@@ -69,15 +69,15 @@
             "escalada"
         ],
         "character": "Duda",
-        "speech": "Let's go take a closer look, Jorge!",
+        "speech": "You have to believe me, it was a BIG TAIL. It must be a sea creature, right?",
     },
     {
         "id": 9,
         "backgroundImages": [
             "escalada"
         ],
-        "character": "Duda",
-        "speech": "Imagine if it's a sea monster, like a big serpent? Or a Mermaid, maybe? I’ve always dreamed of meeting a mermaid... Hold my binoculars Julio, I’ll jump!",
+        "character": "Jorge",
+        "speech": "You always have your head in the clouds, Duda. It could be a mermaid, ",
     },
     {
         "id": 10,
@@ -85,7 +85,7 @@
             "escalada"
         ],
         "character": "Jorge",
-        "speech": "You always have your head in the clouds, Duda. Please be careful with those rocks.",
+        "speech": "or it might just be a fish. Also, be careful with those rocks.",
     },
     {
         "id": 11,
@@ -106,7 +106,7 @@
     {
         "id": 13,
         "backgroundImages": [
-            "pulo2"
+            "pulo1"
         ],
         "character": "Duda",
         "speech": "I NEED to talk to her! Hold my binoculars!",
@@ -122,7 +122,7 @@
     {
         "id": 15,
         "backgroundImages": [
-            "choque"
+            "nadando"
         ],
         "character": "???",
         "speech": "Hey, girl, be careful, you shouldn't be swimming here!",
@@ -130,7 +130,7 @@
     {
         "id": 16,
         "backgroundImages": [
-            "choque"
+            "nadando"
         ],
         "character": "Jorge",
         "speech": "Are you out of your mind? The water's too deep!",
@@ -138,7 +138,7 @@
     {
         "id": 17,
         "backgroundImages": [
-            "choque"
+            "nadando"
         ],
         "character": "Duda",
         "speech": "I know how to swim, don't worry!",
@@ -146,7 +146,7 @@
     {
         "id": 18,
         "backgroundImages": [
-            "choque"
+            "afogando"
         ],
         "character": "Duda",
         "speech": "Wait. Why can't I move? The current is too strong! Someone help!",
@@ -154,7 +154,7 @@
     {
         "id": 19,
         "backgroundImages": [
-            "choque"
+            "afogando"
         ],
         "character": "Jorge",
         "speech": "Duda, I’ll go save you! Don't worry!",
@@ -172,7 +172,7 @@
         "backgroundImages": [
             "miragrita"
         ],
-        "character": "???",
+        "character": "Mira",
         "speech": "Duda, can you hear me? You need to trust me.",
     },
     {
@@ -194,7 +194,7 @@
     {
         "id": 24,
         "backgroundImages": [
-            "choque"
+            "afogando"
         ],
         "character": "Duda",
         "speech": "Ok, ok, I think I got it. Now what?",
@@ -202,7 +202,7 @@
     {
         "id": 25,
         "backgroundImages": [
-            "boia"
+            "afogando"
         ],
         "character": "Mira",
         "speech": "Now you, young man! Don't go into the water to help her.",
@@ -210,7 +210,7 @@
     {
         "id": 26,
         "backgroundImages": [
-            "boia"
+            "afogando"
         ],
         "character": "Mira",
         "speech": "Leave this to me, I'm trained! You can help her from the shore",
@@ -218,7 +218,7 @@
     {
         "id": 27,
         "backgroundImages": [
-            "boia"
+            "boia1", "boia2"
         ],
         "character": "Mira",
         "speech": "Toss that pool float you have to her.",
@@ -226,7 +226,7 @@
     {
         "id": 28,
         "backgroundImages": [
-            "frame6"
+            "frame7"
         ],
         "character": "Mira",
         "speech": "Great! Now it's easier for me to help!",
@@ -242,29 +242,13 @@
     {
         "id": 30,
         "backgroundImages": [
-            "frame8"
-        ],
-        "character": "Mira",
-        "speech": "We must go with the flow and try to leave from the sides, not swim in a straight line.",
-    },
-    {
-        "id": 31,
-        "backgroundImages": [
-            "frame8"
-        ],
-        "character": "Mira",
-        "speech": "Otherwise the strong current will just tire us and then we'll totally sink.",
-    },
-    {
-        "id": 32,
-        "backgroundImages": [
             "cansados1"
         ],
         "character": "Everyone",
         "speech": "...",
     },
     {
-        "id": 33,
+        "id": 31,
         "backgroundImages": [
             "cansados2"
         ],
@@ -272,7 +256,7 @@
         "speech": "Oh my gosh, so you ARE a real mermaid? That's SO COOL! ",
     },
     {
-        "id": 34,
+        "id": 32,
         "backgroundImages": [
             "cansados2"
         ],
@@ -280,15 +264,15 @@
         "speech": "Duda, don't go jumping into the sea like that!",
     },
     {
-        "id": 35,
+        "id": 33,
         "backgroundImages": [
             "cansados2"
         ],
         "character": "Jorge",
-        "speech": "Didn't you see the red flag? Mom told me that means the waves are dangerous.",
+        "speech": "Didn't you see the red flag over there? Mom told me that means the waves are dangerous.",
     },
     {
-        "id": 36,
+        "id": 34,
         "backgroundImages": [
             "cansados2"
         ],
@@ -296,7 +280,7 @@
         "speech": "He's right. You can ask me all your questions later, ",
     },
     {
-        "id": 37,
+        "id": 35,
         "backgroundImages": [
             "cansados2"
         ],
@@ -304,39 +288,47 @@
         "speech": "but first let me explain why you could have drowned if I didn't help.",
     },
     {
+        "id": 36,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "The places with less waves hide danger, you see? This is called a riptide.",
+    },
+    {
+        "id": 37,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "It happens when the waves try to go back to the sea between big sand banks, like these"
+    },
+    {
         "id": 38,
         "backgroundImages": [
             "areia1"
         ],
         "character": "Mira",
-        "speech": "The places with less waves hide danger, you see? Sometimes the waves try to return to the sea between underwater sand banks, which makes them stronger in points like these.",
+        "speech": "which make the waves gather around smaller areas like this,",
+    },
+    {
+        "id": 38,
+        "backgroundImages": [
+            "areia1"
+        ],
+        "character": "Mira",
+        "speech": "and the pull towards the ocean gets bigger.",
     },
     {
         "id": 39,
         "backgroundImages": [
-            "areia1"
-        ],
-        "character": "Mira",
-        "speech": "Sometimes the waves try to return to the sea between underwater sand banks,",
-    },
-    {
-        "id": 40,
-        "backgroundImages": [
-            "areia1"
-        ],
-        "character": "Mira",
-        "speech": "which makes them stronger in points like these.",
-    },
-    {
-        "id": 41,
-        "backgroundImages": [
             "areia2"
         ],
         "character": "Mira",
-        "speech": "The current is so strong that can pull you out to the sea if you’re not careful,",
+        "speech": "The current gets so strong that can pull you out to the sea if you’re not careful,",
     },
     {
-        "id": 42,
+        "id": 40,
         "backgroundImages": [
             "areia2"
         ],
@@ -344,12 +336,28 @@
         "speech": "and even the best of swimmers will have a hard time swimming in the direction of the beach.",
     },
     {
+        "id": 41,
+        "backgroundImages": [
+            "areia2"
+        ],
+        "character": "Mira",
+        "speech": "So when you are pulled by a riptide, you must not panic, and instead try to float",
+    },
+    {
+        "id": 42,
+        "backgroundImages": [
+            "areia2"
+        ],
+        "character": "Mira",
+        "speech": "the riptide will pull you back, and then you can swim to the sides, over the sand banks.",
+    },
+    {
         "id": 43,
         "backgroundImages": [
             "areia2"
         ],
         "character": "Mira",
-        "speech": "So when you are pulled by these return currents, you must not panic,",
+        "speech": "Of course, if it's too hard or you don't know how to swim,",
     },
     {
         "id": 44,
@@ -357,7 +365,7 @@
             "areia2"
         ],
         "character": "Mira",
-        "speech": "and instead try to float. Then, swim to the sides so you get over the sand banks and the waves get weaker. Do you understand now what we did when I helped you?",
+        "speech": "just keep calm and try to catch the attention of a life-guard, like me!",
     },
     {
         "id": 45,
@@ -404,7 +412,7 @@
         "backgroundImages": [
             "mirajorge"
         ],
-        "character": "Jorge",
+        "character": "Mira",
         "speech": "Don't leave them worried!",
-    },
+    }
 ]

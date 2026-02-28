@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GameView: View {
     
+    @ObservedObject var mainMenuViewModel: MainMenuViewModel
+    @ObservedObject var audioService = AudioService.shared
     @State var dialogService = DialogService.shared
     @State private var showOptions = false
     
@@ -21,13 +23,17 @@ struct GameView: View {
                 HStack {
                     Button {
                         showOptions = !showOptions
+                        audioService.playSfx(named: "button")
                     } label: {
                         Image(systemName: "gearshape.fill")
                             .foregroundStyle(Color(.brownborder))
                             .font(.system(size: 40))
-                            .padding()
+                            .padding(40)
                     }
                     Spacer()
+                }
+                .onAppear {
+                    dialogService.fetch()
                 }
                 
                 HStack {
@@ -62,7 +68,18 @@ struct GameView: View {
                     VStack{
                         Spacer()
                         Button {
-                            dialogService.nextAction()
+                            let currentDialog = dialogService.currentDialog()
+                            
+                            if ((currentDialog + 1) == 6) {
+                                mainMenuViewModel.gameState = .eyeglass
+                            } else if ((currentDialog + 1) == 30) {
+                                mainMenuViewModel.gameState = .alagamar
+                            } else {
+                                
+                            }
+                                audioService.playSfx(named: "button")
+                                dialogService.nextAction()
+                            
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 20)
@@ -92,9 +109,10 @@ struct GameView: View {
             Image(dialogService.selectedImageName)
                 .resizable()
                 .scaledToFill()
+                .overlay {
+                    AnimationLayer()
+                }
         }
-        
-        
         
         
     }
@@ -102,5 +120,5 @@ struct GameView: View {
 }
 
 #Preview(traits: .landscapeLeft) {
-    GameView()
+    GameView(mainMenuViewModel: MainMenuViewModel())
 }

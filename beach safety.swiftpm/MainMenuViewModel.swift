@@ -9,7 +9,14 @@ import Foundation
 
 @MainActor
 class MainMenuViewModel: ObservableObject {
-    @Published var gameState: GameState = .mainMenu
+    @Published var gameState: GameState = .rotation
+    
+    func goToMainMenu() {
+        Task {
+            try? await Task.sleep(for: .seconds(5))
+            gameState = .mainMenu
+        }
+    }
     
     func startGame() {
         gameState = .playing
@@ -17,5 +24,9 @@ class MainMenuViewModel: ObservableObject {
     
     func alagamar() {
         gameState = .alagamar
+    }
+    
+    func eyeglass() {
+        gameState = .eyeglass
     }
 }

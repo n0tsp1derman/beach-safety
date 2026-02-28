@@ -31,19 +31,46 @@ struct CreditsView: View {
                     }
                     .padding()
                 }
-                Text("Credits")
+                Text("About")
                     .font(.custom("WinkySans-Regular_Bold", size: 48))
                     .foregroundStyle(Color(.brownborder))
                 
                  Spacer()
-                    .frame(height: 60)
+                    .frame(height: 10)
                 
-                Text("Background volume")
-                    .font(.custom("WinkySans-Regular", size: 24))
-                
+                ScrollView {
+                    VStack (spacing: 20){
+                        
+                        Text("Dedicated to all the children with a head in the clouds.")
+                            .font(.custom("WinkySans-Regular", size: 24))
+                            .padding()
+                        
+                        Text("**Alagamar** is a regional word in brazilian portuguese for the phenomenon of the rip current, also known as riptide. This app was designed to teach children how to behave when caught in a riptide, in a fun and intuitive way.")
+                            .font(.custom("WinkySans-Regular", size: 24))
+                        
+                        Text("Script, art, design and coding by **Yasmin Salamon**, with the help of many lovely friends. Thank you for your attention.")
+                            .font(.custom("WinkySans-Regular", size: 24))
+                        
+                        Text("**SOUND EFFECTS**")
+                            .font(.custom("WinkySans-Regular", size: 24))
+                        
+                        Text("""
+All sound effects are free for personal use, credited below.
+
+**Waves:** 
+**Button:**
+**Surprise:**
+**Splash:**
+**Completion:**
+""")
+                            .font(.custom("WinkySans-Regular", size: 24))
+                        
+                    }
+                }
+                .padding(.horizontal, 30)
                 Spacer()
             }
-            .frame(width: 450, height: 500)
+            .frame(width: 450, height: 550)
             .background(
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color(.amarelo))

@@ -7,12 +7,16 @@
 import SwiftUI
 
 struct EyeglassView: View {
+    @ObservedObject var mainMenuViewModel: MainMenuViewModel
+    @ObservedObject var audioService = AudioService.shared
     @State var posXmermaid: CGFloat = 350
     @State var posYmermaid: CGFloat = 500
     @State var posXeyeglass: CGFloat = 500
     @State var posYeyeglass: CGFloat = 300
     
     @State var collision: Bool = false
+    @State var canMove: Bool = true
+
     
     var body: some View {
         ZStack {
@@ -36,9 +40,11 @@ struct EyeglassView: View {
                 .gesture(
                     DragGesture()
                         .onChanged({value in
-                            self.posXeyeglass = value.location.x
-                            self.posYeyeglass = value.location.y
-                            self.checkCollision()
+                            if self.canMove {
+                                self.posXeyeglass = value.location.x
+                                self.posYeyeglass = value.location.y
+                                self.checkCollision()
+                            }
                         }))
                 .reverseMask {
                     Circle()
@@ -50,9 +56,11 @@ struct EyeglassView: View {
                 .gesture(
                     DragGesture()
                         .onChanged({value in
-                            self.posXeyeglass = value.location.x
-                            self.posYeyeglass = value.location.y
-                            self.checkCollision()
+                            if self.canMove {
+                                self.posXeyeglass = value.location.x
+                                self.posYeyeglass = value.location.y
+                                self.checkCollision()
+                            }
                         }))
         }
     }
@@ -60,7 +68,17 @@ struct EyeglassView: View {
         if abs(self.posXmermaid - self.posXeyeglass) < 100 && abs(self.posYmermaid - self.posYeyeglass) < 100 {
             
             self.collision = true
-            print("eita bateu")
+            audioService.playSfx(named: "complete")
+            canMove = false
+            self.posXeyeglass = self.posXmermaid / 1.25
+            self.posYeyeglass = self.posYmermaid
+            Task {
+                try? await Task.sleep(for: .seconds(2))
+                mainMenuViewModel.gameState = .playing
+            }
+            
+            print("eita achou")
+            
             
         } else {
             self.collision = false
@@ -85,5 +103,5 @@ extension View {
 }
 
 #Preview (traits: .landscapeLeft){
-    EyeglassView()
+    EyeglassView(mainMenuViewModel: MainMenuViewModel())
 }

@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "beach safety",
+    name: "Alagamar",
     platforms: [
         .iOS("18.0")
     ],
     products: [
         .iOSApplication(
-            name: "beach safety",
+            name: "Alagamar",
             targets: ["AppModule"],
             bundleIdentifier: "br.notsp1derman.beach-safety",
             teamIdentifier: "9YAF5L9JSB",

@@ -14,7 +14,6 @@ struct CharacterSpeech: Codable {
     let character: String
     let speech: String
     
-//    Só pra inicializar um bgl vazio kk
     init(id: Int = 0, backgroundImages: [String] = [""], character: String = "", speech: String = "") {
         self.id = id
         self.backgroundImages = backgroundImages
@@ -45,7 +44,6 @@ class DialogService {
     
     private init(){}
     
-    //Gerenciamento interno dele, pode chamar só aqui dentro desse arquivo
     private func getSpeech() -> CharacterSpeech {
         let file = "Dialog"
         
@@ -67,15 +65,22 @@ class DialogService {
         return selectedDialog
     }
     
+    func currentDialog() -> Int {
+        return selectedSpeechId
+    }
+    
     func nextAction() {
         if selectedImageId == selectedDialog.backgroundImages.count - 1 {
             self.selectedSpeechId += 1
+            self.selectedImageId = 0
             selectedDialog = getSpeech()
-        } else if selectedSpeechId == 18 {
-            
         } else {
             self.selectedImageId += 1
         }
+    }
+    
+    func fetch() {
+        selectedDialog = getSpeech()
     }
     
     func setCustomDialogId(_ id: Int) {

@@ -14,22 +14,26 @@ struct MainMenuView: View {
     @State private var showOptions = false
     @State private var showCredits = false
     
-    
-    
     var body: some View {
         ZStack {
             HStack {
                 Spacer()
                 VStack (spacing: 0){
+                    
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 600)
                     Spacer()
                     Button {
                         mainMenuViewModel.startGame()
+                        audioService.playSfx(named: "button")
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(.amarelo))
                                 .stroke(Color(.brownborder), lineWidth: 5)
-                                .frame(width: 341, height: 114)
+                                .frame(width: 300, height: 114)
                                 .padding()
                             
                             
@@ -38,16 +42,18 @@ struct MainMenuView: View {
                                 .foregroundStyle(Color(.brownborder))
                             
                         }
+                        
                     }
                     
                     Button{
                         showOptions = !showOptions
+                        audioService.playSfx(named: "button")
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(.amarelo))
                                 .stroke(Color(.brownborder), lineWidth: 5)
-                                .frame(width: 341, height: 114)
+                                .frame(width: 300, height: 114)
                                 .padding()
                             
                             
@@ -56,20 +62,23 @@ struct MainMenuView: View {
                                 .foregroundStyle(Color(.brownborder))
                             
                         }
+                        
                     }
                     
+                    
                     Button{
+                        audioService.playSfx(named: "button")
                         showCredits = !showCredits
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(.amarelo))
                                 .stroke(Color(.brownborder), lineWidth: 5)
-                                .frame(width: 341, height: 114)
+                                .frame(width: 300, height: 114)
                                 .padding()
                             
                             
-                            Text("Credits")
+                            Text("About")
                                 .font(.custom("WinkySans-Regular_Bold", size: 48))
                                 .foregroundStyle(Color(.brownborder))
                             
@@ -96,7 +105,10 @@ struct MainMenuView: View {
             audioService.playBgm(named: "waves")
         }
         .background(
-            Image("mainscreen")
+            Image("mainscreen1")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
         )
     }
     
