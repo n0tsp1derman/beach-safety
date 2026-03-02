@@ -55,6 +55,7 @@ struct GameView: View {
                             .font(.custom("WinkySans-Regular", size: 36))
                             .foregroundStyle(Color(.brownborder))
                             .padding()
+                            .padding(.horizontal, 10)
                             .frame(maxWidth: 952, maxHeight: 156)
                             .background(
                                 UnevenRoundedRectangle(cornerRadii:

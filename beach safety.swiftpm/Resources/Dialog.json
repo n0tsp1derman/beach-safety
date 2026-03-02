@@ -114,7 +114,7 @@
     {
         "id": 14,
         "backgroundImages": [
-            "pulo2"
+            "bg_pulo"
         ],
         "character": "Jorge",
         "speech": "What?! Duda, WAIT-",
@@ -354,7 +354,7 @@
     {
         "id": 43,
         "backgroundImages": [
-            "areia2"
+            "mirafalando"
         ],
         "character": "Mira",
         "speech": "Of course, if it's too hard or you don't know how to swim,",
@@ -362,7 +362,7 @@
     {
         "id": 44,
         "backgroundImages": [
-            "areia2"
+            "mirafeliz"
         ],
         "character": "Mira",
         "speech": "just keep calm and try to catch the attention of a life-guard, like me!",
@@ -370,7 +370,7 @@
     {
         "id": 45,
         "backgroundImages": [
-            "areia2"
+            "mirafalando"
         ],
         "character": "Mira",
         "speech": "Do you understand now what we did when I helped you?",
@@ -381,7 +381,7 @@
             "dudahesita"
         ],
         "character": "Duda",
-        "speech": "Yeah... now I get it. Sorry Mira, sorry Julio...",
+        "speech": "Yeah... now I get it. Sorry Mira, sorry Jorge...",
     },
     {
         "id": 47,

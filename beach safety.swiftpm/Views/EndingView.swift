@@ -22,7 +22,7 @@ struct EndingView: View {
         ZStack {
             Image(images[currentIndex])
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
             
             VStack {
                 HStack {
@@ -42,7 +42,6 @@ struct EndingView: View {
             
             if showButton {
                 VStack {
-                    Spacer()
                     
                     Button{
                         mainMenuViewModel.gameState = .returnMenu

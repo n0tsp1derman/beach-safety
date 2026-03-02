@@ -124,7 +124,6 @@ struct DrowningView: View {
     func checkCollision() {
         if abs(self.posXduda - self.posXmira) < 100 && abs(self.posYduda - self.posYmira) < 100 {
             
-            audioService.playSfx(named: "complete")
             self.collision = true
             self.drowningViewModel.mira = .gameassets1
             self.drowningViewModel.duda = false

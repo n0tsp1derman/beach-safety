@@ -11,22 +11,35 @@ struct AnimationLayer: View {
     @State var dialogService = DialogService.shared
     @ObservedObject var audioService = AudioService.shared
 
-    @State var xPos = UIScreen.main.bounds.width/2
-    @State var yPos = UIScreen.main.bounds.height/2
+    @State var xPos: CGFloat = 850
+    @State var yPos: CGFloat = 500
     @State var isScaled = false
 
     var body: some View {
         switch dialogService.selectedSpeechId {
         
         case 14:
-            Image("pulo1")
+            Image("duda_pulo")
                 .resizable()
                 .scaledToFit()
+                .scaleEffect(isScaled ? 0.3 : 0.5)
+                .position(x: xPos, y: yPos)
                 .onAppear {
+                    withAnimation (
+                        .easeInOut(duration: 0.3).speed(0.5)
+                    ) {
+                        xPos = 680
+                        yPos = 200
+                        isScaled.toggle()
+                    }
                     Task {
                         try? await Task.sleep(for: .seconds(3))
                         audioService.playSfx(named: "splash")
                     }
+                }
+                .onDisappear {
+                    xPos = 0
+                    yPos = 0
                 }
             
         case 20:
@@ -106,8 +119,8 @@ struct AnimationLayer: View {
                     }
                 }
                 .onDisappear {
-                    xPos = 0
-                    yPos = 0
+                    xPos = 550
+                    yPos = 600
                 }
             
         case 39:
@@ -115,13 +128,17 @@ struct AnimationLayer: View {
             Image("boneco")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 50)
+                .frame(width: 80)
                 .position(x: xPos, y: yPos)
                 .onAppear {
-                    withAnimation(.spring.speed(0.40)) {
-                        xPos = 580
-                        yPos = 600
+                    withAnimation(.spring.speed(0.20)) {
+                        xPos = 550
+                        yPos = 350
                     }
+                }
+                .onDisappear {
+                    xPos = 550
+                    yPos = 350
                 }
                 
             
@@ -130,12 +147,50 @@ struct AnimationLayer: View {
             Image("boneco")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 50)
+                .frame(width: 80)
                 .position(x: xPos, y: yPos)
                 .onAppear {
-                    withAnimation(.spring.speed(0.40)) {
-                        xPos = 700
-                        yPos = 300
+                    withAnimation(.spring.speed(0.60)
+                        .repeatForever(autoreverses: true)) {
+                        xPos = 550
+                        yPos = 380
+                    }
+                }
+                .onDisappear {
+                    xPos = 550
+                    yPos = 350
+                }
+            
+        case 41:
+            
+            Image("boneco")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80)
+                .position(x: xPos, y: yPos)
+                .onAppear {
+                    withAnimation(.spring.speed(0.60)
+                        .repeatForever(autoreverses: true)) {
+                        xPos = 550
+                        yPos = 380
+                    }
+                }
+                .onDisappear {
+                    xPos = 850
+                    yPos = 350
+                }
+            
+        case 42:
+            
+            Image("boneco")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80)
+                .position(x: xPos, y: yPos)
+                .onAppear {
+                    withAnimation(.spring.speed(0.20)) {
+                        xPos = 950
+                        yPos = 350
                     }
                 }
                 .onDisappear {

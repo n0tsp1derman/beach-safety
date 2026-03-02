@@ -13,9 +13,18 @@ struct MainMenuView: View {
     @ObservedObject var audioService = AudioService.shared
     @State private var showOptions = false
     @State private var showCredits = false
+    let background = ["mainscreen1", "mainscreen2", "mainscreen3"]
+    @State private var currentIndex = 0
+    let timer = Timer.publish(every: 0.3, on: .main, in: .common).autoconnect()
+
     
     var body: some View {
         ZStack {
+            Image(background[currentIndex])
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
             HStack {
                 Spacer()
                 VStack (spacing: 0){
@@ -23,7 +32,7 @@ struct MainMenuView: View {
                     Image("logo")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 600)
+                        .frame(width: 480)
                     Spacer()
                     Button {
                         mainMenuViewModel.startGame()
@@ -85,8 +94,9 @@ struct MainMenuView: View {
                         }
                     }
                 }
+                .padding(50)
             }
-            .padding()
+            .padding(20)
             
             if showOptions {
                 OptionsView(onClose: {
@@ -104,14 +114,20 @@ struct MainMenuView: View {
         .onAppear {
             audioService.playBgm(named: "waves")
         }
-        .background(
-            Image("mainscreen1")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-        )
-    }
+        .task {
+                    await startLoop()
+                }
+        }
     
+    func startLoop() async {
+        while true {
+            try? await Task.sleep(for: .seconds(1))
+            
+            await MainActor.run {
+                currentIndex = (currentIndex + 1) % background.count
+            }
+        }
+    }
 }
 
 #Preview (traits: .landscapeLeft){
